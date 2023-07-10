@@ -1,0 +1,15 @@
+.feedbackcont {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.form1 {
+    width: 500px;
+}
+
+@media (max-width: 768px) {
+    .form1 {
+        width: auto;
+}
+}

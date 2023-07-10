@@ -1,0 +1,46 @@
+.homecontent {
+    text-decoration: black;
+}
+
+.feature3 {
+    margin-left: 25px;
+    margin-right: 15px;
+}
+
+.vision-purpose-container {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .image-container {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .image-container img {
+    width: 400px;
+    height: auto;
+  }
+  
+  .vision-purpose {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .vision,
+  .purpose {
+    margin-bottom: 20px;
+    color: white;
+    margin-right: 5px;
+  }
+
+@media (max-width: 768px) {
+    .vision-purpose-container {
+        flex-direction: column;
+        margin: 20px;
+    }
+}
+  

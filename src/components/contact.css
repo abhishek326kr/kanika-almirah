@@ -1,0 +1,22 @@
+.formdiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 70px;
+    padding: 20px;
+
+  }
+
+  @media (max-width: 768px) {
+    .formdiv {
+        padding: 1%;
+        margin: 20px;
+    }
+}
+
+  
