@@ -12,7 +12,7 @@ const Products = () => {
         <Banner2 imageUrl={bannerimg} />
       </div>
 
-        <h1 className="producttitle">Our Almirah Products</h1>
+        <h1 className="producttitle">Our Wide Range of Products</h1>
         {/* Other components or content */}
         <CardData displayRow={true} rowLimit={10} />
       </section>

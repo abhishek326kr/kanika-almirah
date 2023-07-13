@@ -1,21 +1,30 @@
 import React from 'react';
-import './feedbackform.css'
+import axios from 'axios';
+import './feedbackform.css';
 
 const ContactForm = () => {
   const [formStatus, setFormStatus] = React.useState('Send');
 
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
     setFormStatus('Submitting...');
     const { name, email, phone, subject, message } = e.target.elements;
-    let conFom = {
+    const formData = {
       name: name.value,
       email: email.value,
       phone: phone.value,
       subject: subject.value,
       message: message.value,
     };
-    console.log(conFom);
+
+    try {
+      const response = await axios.post('/api/enquiries', formData);
+      console.log(response.data); // Optional: Handle response from the server
+      setFormStatus('Sent');
+    } catch (error) {
+      console.error(error);
+      setFormStatus('Error');
+    }
   };
 
   return (
@@ -61,3 +70,4 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
+ 
